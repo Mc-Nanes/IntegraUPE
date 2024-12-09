@@ -130,10 +130,15 @@ form button:hover {
 }
 /* Estilo do Banner */
 .banner {
-    background: url('assets/banner.jpg') no-repeat center center/cover;
-    color: #fff;
+    background: url('assets/banner.jpg') no-repeat center center;
+    background-size: contain; /* Reduz a imagem para caber na tela mantendo a proporção */
+    background-color: #f4f4f9; /* Cor de fundo para áreas não cobertas pela imagem */
+    height: 100vh; /* Altura do banner ocupando toda a altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 10rem 2rem;
+    color: #fff;
 }
 
 .banner-content h1 {
