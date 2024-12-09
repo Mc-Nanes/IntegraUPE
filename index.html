@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntegraUPE - Portal de Projetos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <img src="assets/logo.png" alt="Logo IntegraUPE" class="logo">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" class="tab-link" data-tab="filtro">Filtrar Projetos</a></li>
+                    <li><a href="#" class="tab-link" data-tab="cadastro">Cadastrar Projetos</a></li>
+                    <li><a href="#" class="tab-link" data-tab="portfolio">Meu Portfólio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+        <!-- Filtrar Projetos -->
+        <section id="filtro" class="tab-content active">
+            <h2>Filtrar Projetos</h2>
+            <form>
+                <label for="filtro-tecnologia">Tecnologia</label>
+                <input type="text" id="filtro-tecnologia" name="filtro-tecnologia" placeholder="Ex.: Python, JavaScript">
+
+                <label for="filtro-ano">Ano/Semestre</label>
+                <input type="text" id="filtro-ano" name="filtro-ano" placeholder="Ex.: 2024.1">
+
+                <label for="filtro-disciplina">Disciplina</label>
+                <input type="text" id="filtro-disciplina" name="filtro-disciplina" placeholder="Ex.: Engenharia de Software">
+
+                <button type="submit" class="btn">Aplicar Filtros</button>
+            </form>
+        </section>
+
+        <!-- Cadastro de Projetos -->
+        <section id="cadastro" class="tab-content">
+            <h2>Cadastrar Novo Projeto</h2>
+            <form>
+                <label for="titulo">Título do Projeto</label>
+                <input type="text" id="titulo" name="titulo" required>
+
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" name="descricao" rows="5" required></textarea>
+
+                <label for="tecnologias">Tecnologias Utilizadas</label>
+                <input type="text" id="tecnologias" name="tecnologias" required>
+
+                <label for="disciplina">Disciplinas Envolvidas</label>
+                <input type="text" id="disciplina" name="disciplina" required>
+
+                <label for="ano">Ano de Desenvolvimento</label>
+                <input type="number" id="ano" name="ano" required>
+
+                <button type="submit" class="btn">Cadastrar Projeto</button>
+            </form>
+        </section>
+
+        <!-- Portfólio Pessoal -->
+        <section id="portfolio" class="tab-content">
+            <h2>Meu Portfólio</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do projeto.</p>
+                    <a href="#">Ver mais</a>
+                </div>
+                <div class="card">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição breve do projeto.</p>
+                    <a href="#">Ver mais</a>
+                </div>
+                <div class="card">
+                    <h3>Projeto 3</h3>
+                    <p>Descrição breve do projeto.</p>
+                    <a href="#">Ver mais</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2024 IntegraUPE. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
